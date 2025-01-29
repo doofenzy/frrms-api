@@ -13,6 +13,7 @@ return new class extends Migration
     {
         Schema::create('calamities', function (Blueprint $table) {
             $table->id();
+            $table->string('calamity_name');
             $table->string('type');
             $table->string('severity_level');
             $table->string('cause');

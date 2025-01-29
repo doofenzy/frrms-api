@@ -14,7 +14,8 @@ class CalamityController extends Controller
 
         // If query is provided, filter results; otherwise, fetch all calamities
         $calamities = Calamity::when($query, function ($queryBuilder) use ($query) {
-            $queryBuilder->where('type', 'LIKE', "%{$query}%")
+            $queryBuilder->where('calamity_name', 'LIKE', "%{$query}%")
+                ->orWhere('type', 'LIKE', "%{$query}%")
                 ->orWhere('severity_level', 'LIKE', "%{$query}%")
                 ->orWhere('cause', 'LIKE', "%{$query}%")
                 ->orWhere('alert_level', 'LIKE', "%{$query}%")
@@ -27,6 +28,7 @@ class CalamityController extends Controller
     public function store(Request $request)
     {
         $validated = $request->validate([
+            'calamity_name' => 'required|string',
             'type' => 'required|string',
             'severity_level' => 'required|string',
             'cause' => 'required|string',
@@ -48,6 +50,7 @@ class CalamityController extends Controller
     public function update(Request $request, Calamity $calamity)
     {
         $validated = $request->validate([
+            'calamity_name' => 'string',
             'type' => 'string',
             'severity_level' => 'string',
             'cause' => 'string',

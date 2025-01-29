@@ -10,6 +10,7 @@ class Calamity extends Model
     use HasFactory;
 
     protected $fillable = [
+        'calamity_name',
         'type',
         'severity_level',
         'cause',
