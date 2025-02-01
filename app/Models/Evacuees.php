@@ -5,29 +5,28 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Evacuess extends Model
+class Evacuees extends Model
 {
     use HasFactory;
-
     protected $fillable = [
         'head_family',
         'infant',
         'toddlers',
         'preschool',
         'school_age',
-        'teen_age',                                       
+        'teen_age',
         'adult',
         'senior_citizen',
         'total_persons',
         'lactating_mothers',
         'pregnant',
-        'pwd'  ,
+        'pwd',
         'solo_parent',
-        'evacuation_center_id', // Foreign key
+        'evacuation_center_id',
     ];
 
-    public function evacuationCenters()
+    public function evacuationCenter()
     {
-        return $this->hasMany(EvacuationCenter::class);
+        return $this->belongsTo(EvacuationCenter::class);
     }
 }
