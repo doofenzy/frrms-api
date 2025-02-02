@@ -26,3 +26,4 @@ Route::apiResource('calamities', CalamityController::class);
 Route::apiResource('evacuation-centers', EvacuationCenterController::class);
 Route::get('/evacuation-centers/calamity/{calamityId}', [EvacuationCenterController::class, 'getByCalamity']);
 Route::apiResource('/evacuees', EvacueesController::class);
+Route::get('/evacuees/calamity/{calamity_id}', [EvacueesController::class, 'getByCalamityId']);

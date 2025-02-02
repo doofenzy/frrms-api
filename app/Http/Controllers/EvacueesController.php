@@ -49,6 +49,11 @@ class EvacueesController extends Controller
         return response()->json($evacuees, 201);
     }
 
+    public function getByCalamityId($calamity_id)
+    {
+        $evacuees = Evacuees::where('calamity_id', $calamity_id)->get();
+        return response()->json($evacuees);
+    }
     public function update(Request $request, $id)
     {
         // Debugging statement to check if the method is called
@@ -57,6 +62,7 @@ class EvacueesController extends Controller
         try {
             $validated = $request->validate([
                 'evacuation_center_id' => 'required|exists:evacuation_centers,id',
+                'calamity_id' => 'required|exists:calamities,id',
             ]);
             error_log('yes');
         } catch (\Illuminate\Validation\ValidationException $e) {
@@ -66,11 +72,13 @@ class EvacueesController extends Controller
 
         $evacuee = Evacuees::findOrFail($id);
         $evacuee->evacuation_center_id = $validated['evacuation_center_id'];
+        $evacuee->calamity_id = $validated['calamity_id']; // Ensure calamity_id is updated
         $evacuee->save();
 
         // Debugging statements
         error_log('Evacuee ID: ' . $id);
         error_log('New Evacuation Center ID: ' . $validated['evacuation_center_id']);
+        error_log('New Calamity ID: ' . $validated['calamity_id']);
         error_log('Updated Evacuee: ' . $evacuee->toJson());
 
         return response()->json($evacuee);

@@ -23,6 +23,7 @@ class Evacuees extends Model
         'pwd',
         'solo_parent',
         'evacuation_center_id',
+        'calamity_id',
     ];
 
     public function evacuationCenter()

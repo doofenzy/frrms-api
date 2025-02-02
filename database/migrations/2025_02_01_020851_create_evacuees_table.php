@@ -27,6 +27,7 @@ return new class extends Migration
             $table->integer('pwd');
             $table->integer('solo_parent');
             $table->integer('evacuation_center_id')->nullable();
+            $table->integer('calamity_id')->nullable();
             $table->timestamps();
         });
     }
