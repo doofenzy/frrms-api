@@ -20,6 +20,8 @@ class DatabaseSeeder extends Seeder
         // ]);
         $this->call([
             EvacueesTableSeeder::class,
+            HeadFamilySeeder::class,
+            MembersSeeder::class,
         ]);
     }
 }

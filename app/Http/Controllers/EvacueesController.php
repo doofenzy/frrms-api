@@ -56,7 +56,7 @@ class EvacueesController extends Controller
     }
     public function update(Request $request, $id)
     {
-        // Debugging statement to check if the method is called
+
         error_log('Update method called');
 
         try {
@@ -72,10 +72,9 @@ class EvacueesController extends Controller
 
         $evacuee = Evacuees::findOrFail($id);
         $evacuee->evacuation_center_id = $validated['evacuation_center_id'];
-        $evacuee->calamity_id = $validated['calamity_id']; // Ensure calamity_id is updated
+        $evacuee->calamity_id = $validated['calamity_id'];
         $evacuee->save();
 
-        // Debugging statements
         error_log('Evacuee ID: ' . $id);
         error_log('New Evacuation Center ID: ' . $validated['evacuation_center_id']);
         error_log('New Calamity ID: ' . $validated['calamity_id']);
