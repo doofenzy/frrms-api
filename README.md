@@ -38,7 +38,6 @@ To run this application, follow these steps:
     php artisan serve
     ```
 
-**Note**: The queue worker (`php artisan queue:work`) must be running for the notification system to function properly. This processes background jobs like sending notifications to users.
 
 ## About Laravel
 
