@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CalamityController;
 use App\Http\Controllers\EvacuationCenterController;
 use App\Http\Controllers\EvacueesController;
+use App\Http\Controllers\HeadFamilyController;
 
 
 /*
@@ -27,3 +28,4 @@ Route::apiResource('evacuation-centers', EvacuationCenterController::class);
 Route::get('/evacuation-centers/calamity/{calamityId}', [EvacuationCenterController::class, 'getByCalamity']);
 Route::apiResource('/evacuees', EvacueesController::class);
 Route::get('/evacuees/calamity/{calamity_id}', [EvacueesController::class, 'getByCalamityId']);
+Route::get('/head-family/', [HeadFamilyController::class, 'getHeadFam']);
