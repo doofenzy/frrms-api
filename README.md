@@ -16,24 +16,20 @@ To run this application, follow these steps:
     ```bash
     composer install
     ```
-3. Install JavaScript dependencies:
-    ```bash
-    npm install
-    ```
-4. Create and configure your `.env` file:
+3. Create and configure your `.env` file:
     ```bash
     copy .env.example .env
     php artisan key:generate
     ```
-5. Create Database:
+4. Create Database:
     ```bash
     php artisan migrate
     ```
-6. Set up the database:
+5. Set up the database:
     ```bash
     php artisan migrate:fresh --seed
     ```
-7. Start the development server:
+6. Start the development server:
     ```bash
     php artisan serve
     ```
