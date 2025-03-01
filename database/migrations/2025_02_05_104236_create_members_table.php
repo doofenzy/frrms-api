@@ -28,7 +28,19 @@ return new class extends Migration
             $table->string('occupation');
             $table->string('group');
             $table->string('relationship');
+            $table->integer('infant');
+            $table->integer('toddlers');
+            $table->integer('preschool');
+            $table->integer('schoolAge');
+            $table->integer('teenAge');
+            $table->integer('adult');
+            $table->integer('seniorCitizen');
+            $table->integer('lactatingMothers');
+            $table->integer('pregnant');
+            $table->integer('pwd');
+            $table->integer('soloParent');
             $table->integer('head_id');
+            $table->integer('evacuation_center_id')->nullable();
         });
     }
 

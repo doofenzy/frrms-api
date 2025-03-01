@@ -5,10 +5,12 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class HeadFamily extends Model
+class Members extends Model
 {
-    protected $table = 'head_family';
     use HasFactory;
+    protected $table = 'members';
+    public $timestamps = false;
+
     protected $fillable = [
         'fname',
         'lname',
@@ -24,20 +26,24 @@ class HeadFamily extends Model
         'gender',
         'occupation',
         'group',
-        'four_p',
-        'gov_id',
-        'brgy',
         'relationship',
-        'evacuation_type',
-        'evacuee_family_id',
+        'infant',
+        'toddlers',
+        'preschool',
+        'schoolAge',
+        'teenAge',
+        'adult',
+        'seniorCitizen',
+        'lactatingMothers',
+        'pregnant',
+        'pwd',
+        'soloParent',
+        'head_id',
+        'evacuation_center_id'
     ];
 
-    public function evacuees()
+    public function evacuationCenters()
     {
-        return $this->belongsTo(Evacuees::class);
-    }
-    public function members()
-    {
-        return $this->hasMany(Members::class, 'head_id');
+        return $this->hasMany(HeadFamily::class);
     }
 }

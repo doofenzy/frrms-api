@@ -6,6 +6,7 @@ use App\Http\Controllers\CalamityController;
 use App\Http\Controllers\EvacuationCenterController;
 use App\Http\Controllers\EvacueesController;
 use App\Http\Controllers\HeadFamilyController;
+use App\Http\Controllers\MembersController;
 
 
 /*
@@ -29,3 +30,5 @@ Route::get('/evacuation-centers/calamity/{calamityId}', [EvacuationCenterControl
 Route::apiResource('/evacuees', EvacueesController::class);
 Route::get('/evacuees/calamity/{calamity_id}', [EvacueesController::class, 'getByCalamityId']);
 Route::get('/head-family/', [HeadFamilyController::class, 'getHeadFam']);
+Route::get('/members/{evacuation_center_id}', [MembersController::class, 'getTotalValues']);
+Route::put('/members/update-evacuation-center/{head_id}', [MembersController::class, 'updateEvacuationCenter']);
