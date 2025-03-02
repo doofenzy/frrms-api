@@ -75,4 +75,27 @@ class MembersController extends Controller
 
         return response()->json(['message' => 'Evacuation center updated successfully']);
     }
+
+    public function getTotalStats($evacuation_center_id)
+    {
+        $totalPopulation = Members::where('evacuation_center_id', $evacuation_center_id)->count();
+        $totalFemales = Members::where('evacuation_center_id', $evacuation_center_id)->where('gender', 'female')->count();
+        $totalMales = Members::where('evacuation_center_id', $evacuation_center_id)->where('gender', 'male')->count();
+        $totalFamilies = HeadFamily::whereHas('members', function ($query) use ($evacuation_center_id) {
+            $query->where('evacuation_center_id', $evacuation_center_id);
+        })->count();
+        $totalSeniors = Members::where('evacuation_center_id', $evacuation_center_id)->where('age', '>=', 60)->count();
+        $totalUnderaged = Members::where('evacuation_center_id', $evacuation_center_id)->where('age', '<', 18)->count();
+
+        $response = [
+            'totalPopulation' => $totalPopulation,
+            'totalFemales' => $totalFemales,
+            'totalMales' => $totalMales,
+            'totalFamilies' => $totalFamilies,
+            'totalSeniors' => $totalSeniors,
+            'totalUnderaged' => $totalUnderaged,
+        ];
+
+        return response()->json($response);
+    }
 }
