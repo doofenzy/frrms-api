@@ -41,6 +41,7 @@ return new class extends Migration
             $table->integer('soloParent');
             $table->integer('head_id');
             $table->integer('evacuation_center_id')->nullable();
+            $table->integer('calamity_id')->nullable();
         });
     }
 

@@ -68,12 +68,23 @@ class MembersController extends Controller
     public function updateEvacuationCenter(Request $request, $head_id)
     {
         error_log('Update method called');
+        error_log('Request data: ' . json_encode($request->all()));
+
         $evacuation_center_id = $request->input('evacuation_center_id');
+        $calamity_id = $request->input('calamity_id');
 
-        Members::where('head_id', $head_id)
-            ->update(['evacuation_center_id' => $evacuation_center_id]);
+        error_log('Evacuation Center ID: ' . $evacuation_center_id);
+        error_log('Calamity ID: ' . $calamity_id);
 
-        return response()->json(['message' => 'Evacuation center updated successfully']);
+        $updateResult = Members::where('head_id', $head_id)
+            ->update([
+                'evacuation_center_id' => $evacuation_center_id,
+                'calamity_id' => $calamity_id
+            ]);
+
+        error_log('Update result: ' . $updateResult);
+
+        return response()->json(['message' => 'Evacuation center and calamity updated successfully']);
     }
 
     public function getTotalStats($evacuation_center_id)

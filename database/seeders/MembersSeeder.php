@@ -41,8 +41,9 @@ class MembersSeeder extends Seeder
             'soloParent' => 0,
             'head_id' => 1,
             'evacuation_center_id' => null,
+            'calamity_id' => null,
         ]);
-        
+
         DB::table('members')->insert([
             'fname' => 'Maria',
             'lname' => 'Gomez',
@@ -72,8 +73,9 @@ class MembersSeeder extends Seeder
             'soloParent' => 0,
             'head_id' => 1,
             'evacuation_center_id' => null,
+            'calamity_id' => null,
         ]);
-        
+
         DB::table('members')->insert([
             'fname' => 'Luis',
             'lname' => 'Gomez',
@@ -103,8 +105,9 @@ class MembersSeeder extends Seeder
             'soloParent' => 0,
             'head_id' => 1,
             'evacuation_center_id' => null,
+            'calamity_id' => null,
         ]);
-        
+
         DB::table('members')->insert([
             'fname' => 'Sofia',
             'lname' => 'Gomez',
@@ -134,8 +137,9 @@ class MembersSeeder extends Seeder
             'soloParent' => 0,
             'head_id' => 1,
             'evacuation_center_id' => null,
+            'calamity_id' => null,
         ]);
-        
+
         DB::table('members')->insert([
             'fname' => 'Daniel',
             'lname' => 'Martinez',
@@ -165,8 +169,9 @@ class MembersSeeder extends Seeder
             'soloParent' => 0,
             'head_id' => 2,
             'evacuation_center_id' => null,
+            'calamity_id' => null,
         ]);
-        
+
         DB::table('members')->insert([
             'fname' => 'Isabel',
             'lname' => 'Martinez',
@@ -196,8 +201,9 @@ class MembersSeeder extends Seeder
             'soloParent' => 0,
             'head_id' => 2,
             'evacuation_center_id' => null,
+            'calamity_id' => null,
         ]);
-        
+
         DB::table('members')->insert([
             'fname' => 'Miguel',
             'lname' => 'Martinez',
@@ -227,8 +233,9 @@ class MembersSeeder extends Seeder
             'soloParent' => 0,
             'head_id' => 2,
             'evacuation_center_id' => null,
+            'calamity_id' => null,
         ]);
-        
+
         DB::table('members')->insert([
             'fname' => 'Elena',
             'lname' => 'Martinez',
@@ -258,6 +265,7 @@ class MembersSeeder extends Seeder
             'soloParent' => 0,
             'head_id' => 2,
             'evacuation_center_id' => null,
+            'calamity_id' => null,
         ]);
 
         DB::table('members')->insert([
@@ -289,8 +297,9 @@ class MembersSeeder extends Seeder
             'soloParent' => 0,
             'head_id' => 3,
             'evacuation_center_id' => null,
+            'calamity_id' => null,
         ]);
-        
+
         DB::table('members')->insert([
             'fname' => 'Carmen',
             'lname' => 'Delacruz',
@@ -320,8 +329,9 @@ class MembersSeeder extends Seeder
             'soloParent' => 0,
             'head_id' => 3,
             'evacuation_center_id' => null,
+            'calamity_id' => null,
         ]);
-        
+
         DB::table('members')->insert([
             'fname' => 'Emmanuel',
             'lname' => 'Delacruz',
@@ -351,8 +361,9 @@ class MembersSeeder extends Seeder
             'soloParent' => 0,
             'head_id' => 3,
             'evacuation_center_id' => null,
+            'calamity_id' => null,
         ]);
-        
+
         DB::table('members')->insert([
             'fname' => 'Isabela',
             'lname' => 'Delacruz',
@@ -382,8 +393,9 @@ class MembersSeeder extends Seeder
             'soloParent' => 0,
             'head_id' => 3,
             'evacuation_center_id' => null,
+            'calamity_id' => null,
         ]);
-        
+
         DB::table('members')->insert([
             'fname' => 'Santiago',
             'lname' => 'Delacruz',
@@ -413,8 +425,9 @@ class MembersSeeder extends Seeder
             'soloParent' => 0,
             'head_id' => 3,
             'evacuation_center_id' => null,
+            'calamity_id' => null,
         ]);
-        
+
         DB::table('members')->insert([
             'fname' => 'Lucia',
             'lname' => 'Delacruz',
@@ -444,8 +457,9 @@ class MembersSeeder extends Seeder
             'soloParent' => 0,
             'head_id' => 3,
             'evacuation_center_id' => null,
+            'calamity_id' => null,
         ]);
-         
+
         DB::table('members')->insert([
             'fname' => 'Miguel',
             'lname' => 'Santiago',
@@ -475,8 +489,9 @@ class MembersSeeder extends Seeder
             'soloParent' => 0,
             'head_id' => 4,
             'evacuation_center_id' => null,
+            'calamity_id' => null,
         ]);
-        
+
         DB::table('members')->insert([
             'fname' => 'Angela',
             'lname' => 'Santiago',
@@ -506,8 +521,9 @@ class MembersSeeder extends Seeder
             'soloParent' => 0,
             'head_id' => 4,
             'evacuation_center_id' => null,
+            'calamity_id' => null,
         ]);
-        
+
         DB::table('members')->insert([
             'fname' => 'Carlos',
             'lname' => 'Santiago',
@@ -537,8 +553,9 @@ class MembersSeeder extends Seeder
             'soloParent' => 0,
             'head_id' => 4,
             'evacuation_center_id' => null,
+            'calamity_id' => null,
         ]);
-        
+
         DB::table('members')->insert([
             'fname' => 'Eduardo',
             'lname' => 'Gomez',
@@ -568,8 +585,9 @@ class MembersSeeder extends Seeder
             'soloParent' => 0,
             'head_id' => 5,
             'evacuation_center_id' => null,
+            'calamity_id' => null,
         ]);
-        
+
         DB::table('members')->insert([
             'fname' => 'Maria',
             'lname' => 'Gomez',
@@ -599,8 +617,9 @@ class MembersSeeder extends Seeder
             'soloParent' => 0,
             'head_id' => 5,
             'evacuation_center_id' => null,
+            'calamity_id' => null,
         ]);
-        
+
         DB::table('members')->insert([
             'fname' => 'Gabriel',
             'lname' => 'Gomez',
@@ -630,8 +649,9 @@ class MembersSeeder extends Seeder
             'soloParent' => 0,
             'head_id' => 5,
             'evacuation_center_id' => null,
+            'calamity_id' => null,
         ]);
-        
+
         DB::table('members')->insert([
             'fname' => 'Elena',
             'lname' => 'Gomez',
@@ -661,8 +681,9 @@ class MembersSeeder extends Seeder
             'soloParent' => 0,
             'head_id' => 5,
             'evacuation_center_id' => null,
+            'calamity_id' => null,
         ]);
-        
+
         DB::table('members')->insert([
             'fname' => 'Ricardo',
             'lname' => 'Gomez',
@@ -692,8 +713,9 @@ class MembersSeeder extends Seeder
             'soloParent' => 0,
             'head_id' => 5,
             'evacuation_center_id' => null,
+            'calamity_id' => null,
         ]);
-        
+
         DB::table('members')->insert([
             'fname' => 'Sofia',
             'lname' => 'Gomez',
@@ -723,8 +745,9 @@ class MembersSeeder extends Seeder
             'soloParent' => 0,
             'head_id' => 5,
             'evacuation_center_id' => null,
+            'calamity_id' => null,
         ]);
-        
+
         DB::table('members')->insert([
             'fname' => 'Lorenzo',
             'lname' => 'Gomez',
@@ -754,6 +777,7 @@ class MembersSeeder extends Seeder
             'soloParent' => 0,
             'head_id' => 5,
             'evacuation_center_id' => null,
+            'calamity_id' => null,
         ]);
         DB::table('members')->insert([
             'fname' => 'Roberto',
@@ -784,8 +808,9 @@ class MembersSeeder extends Seeder
             'soloParent' => 0,
             'head_id' => 6,
             'evacuation_center_id' => null,
+            'calamity_id' => null,
         ]);
-        
+
         DB::table('members')->insert([
             'fname' => 'Isabel',
             'lname' => 'Delacruz',
@@ -815,8 +840,9 @@ class MembersSeeder extends Seeder
             'soloParent' => 0,
             'head_id' => 6,
             'evacuation_center_id' => null,
+            'calamity_id' => null,
         ]);
-        
+
         DB::table('members')->insert([
             'fname' => 'Mark',
             'lname' => 'Delacruz',
@@ -846,8 +872,9 @@ class MembersSeeder extends Seeder
             'soloParent' => 0,
             'head_id' => 6,
             'evacuation_center_id' => null,
+            'calamity_id' => null,
         ]);
-        
+
         DB::table('members')->insert([
             'fname' => 'Samantha',
             'lname' => 'Delacruz',
@@ -877,8 +904,9 @@ class MembersSeeder extends Seeder
             'soloParent' => 0,
             'head_id' => 6,
             'evacuation_center_id' => null,
+            'calamity_id' => null,
         ]);
-        
+
         DB::table('members')->insert([
             'fname' => 'Luis',
             'lname' => 'Delacruz',
@@ -908,8 +936,9 @@ class MembersSeeder extends Seeder
             'soloParent' => 0,
             'head_id' => 6,
             'evacuation_center_id' => null,
+            'calamity_id' => null,
         ]);
-        
+
         DB::table('members')->insert([
             'fname' => 'Sofia',
             'lname' => 'Delacruz',
@@ -939,8 +968,9 @@ class MembersSeeder extends Seeder
             'soloParent' => 0,
             'head_id' => 6,
             'evacuation_center_id' => null,
+            'calamity_id' => null,
         ]);
-        
+
         DB::table('members')->insert([
             'fname' => 'Antonio',
             'lname' => 'Gonzales',
@@ -970,8 +1000,9 @@ class MembersSeeder extends Seeder
             'soloParent' => 0,
             'head_id' => 7,
             'evacuation_center_id' => null,
+            'calamity_id' => null,
         ]);
-        
+
         DB::table('members')->insert([
             'fname' => 'Maria',
             'lname' => 'Gonzales',
@@ -1001,8 +1032,9 @@ class MembersSeeder extends Seeder
             'soloParent' => 0,
             'head_id' => 7,
             'evacuation_center_id' => null,
+            'calamity_id' => null,
         ]);
-        
+
         DB::table('members')->insert([
             'fname' => 'Daniel',
             'lname' => 'Gonzales',
@@ -1032,8 +1064,9 @@ class MembersSeeder extends Seeder
             'soloParent' => 0,
             'head_id' => 7,
             'evacuation_center_id' => null,
+            'calamity_id' => null,
         ]);
-        
+
         DB::table('members')->insert([
             'fname' => 'Andrea',
             'lname' => 'Gonzales',
@@ -1063,8 +1096,9 @@ class MembersSeeder extends Seeder
             'soloParent' => 0,
             'head_id' => 7,
             'evacuation_center_id' => null,
+            'calamity_id' => null,
         ]);
-        
+
         DB::table('members')->insert([
             'fname' => 'Gabriel',
             'lname' => 'Gonzales',
@@ -1094,8 +1128,9 @@ class MembersSeeder extends Seeder
             'soloParent' => 0,
             'head_id' => 7,
             'evacuation_center_id' => null,
+            'calamity_id' => null,
         ]);
-        
+
         DB::table('members')->insert([
             'fname' => 'Sophia',
             'lname' => 'Gonzales',
@@ -1125,8 +1160,9 @@ class MembersSeeder extends Seeder
             'soloParent' => 0,
             'head_id' => 7,
             'evacuation_center_id' => null,
+            'calamity_id' => null,
         ]);
-        
+
         DB::table('members')->insert([
             'fname' => 'Lucas',
             'lname' => 'Gonzales',
@@ -1156,8 +1192,9 @@ class MembersSeeder extends Seeder
             'soloParent' => 0,
             'head_id' => 7,
             'evacuation_center_id' => null,
+            'calamity_id' => null,
         ]);
-         
+
         DB::table('members')->insert([
             'fname' => 'Carlos',
             'lname' => 'Dela Cruz',
@@ -1187,8 +1224,9 @@ class MembersSeeder extends Seeder
             'soloParent' => 0,
             'head_id' => 8,
             'evacuation_center_id' => null,
+            'calamity_id' => null,
         ]);
-        
+
         DB::table('members')->insert([
             'fname' => 'Isabel',
             'lname' => 'Dela Cruz',
@@ -1218,8 +1256,9 @@ class MembersSeeder extends Seeder
             'soloParent' => 0,
             'head_id' => 8,
             'evacuation_center_id' => null,
+            'calamity_id' => null,
         ]);
-        
+
         DB::table('members')->insert([
             'fname' => 'Miguel',
             'lname' => 'Dela Cruz',
@@ -1249,8 +1288,9 @@ class MembersSeeder extends Seeder
             'soloParent' => 0,
             'head_id' => 8,
             'evacuation_center_id' => null,
+            'calamity_id' => null,
         ]);
-        
+
         DB::table('members')->insert([
             'fname' => 'Ana',
             'lname' => 'Dela Cruz',
@@ -1280,8 +1320,9 @@ class MembersSeeder extends Seeder
             'soloParent' => 0,
             'head_id' => 8,
             'evacuation_center_id' => null,
+            'calamity_id' => null,
         ]);
-        
+
         DB::table('members')->insert([
             'fname' => 'Paolo',
             'lname' => 'Dela Cruz',
@@ -1311,8 +1352,9 @@ class MembersSeeder extends Seeder
             'soloParent' => 0,
             'head_id' => 8,
             'evacuation_center_id' => null,
+            'calamity_id' => null,
         ]);
-        
+
         DB::table('members')->insert([
             'fname' => 'Elena',
             'lname' => 'Dela Cruz',
@@ -1342,8 +1384,9 @@ class MembersSeeder extends Seeder
             'soloParent' => 0,
             'head_id' => 8,
             'evacuation_center_id' => null,
+            'calamity_id' => null,
         ]);
-        
+
         DB::table('members')->insert([
             'fname' => 'Lucas',
             'lname' => 'Dela Cruz',
@@ -1373,8 +1416,9 @@ class MembersSeeder extends Seeder
             'soloParent' => 0,
             'head_id' => 8,
             'evacuation_center_id' => null,
+            'calamity_id' => null,
         ]);
-        
+
         DB::table('members')->insert([
             'fname' => 'Rafael',
             'lname' => 'Gonzalez',
@@ -1404,8 +1448,9 @@ class MembersSeeder extends Seeder
             'soloParent' => 0,
             'head_id' => 9,
             'evacuation_center_id' => null,
+            'calamity_id' => null,
         ]);
-        
+
         DB::table('members')->insert([
             'fname' => 'Maria',
             'lname' => 'Gonzalez',
@@ -1435,8 +1480,9 @@ class MembersSeeder extends Seeder
             'soloParent' => 0,
             'head_id' => 9,
             'evacuation_center_id' => null,
+            'calamity_id' => null,
         ]);
-        
+
         DB::table('members')->insert([
             'fname' => 'Javier',
             'lname' => 'Gonzalez',
@@ -1466,8 +1512,9 @@ class MembersSeeder extends Seeder
             'soloParent' => 0,
             'head_id' => 9,
             'evacuation_center_id' => null,
+            'calamity_id' => null,
         ]);
-        
+
         DB::table('members')->insert([
             'fname' => 'Elena',
             'lname' => 'Gonzalez',
@@ -1497,8 +1544,9 @@ class MembersSeeder extends Seeder
             'soloParent' => 0,
             'head_id' => 9,
             'evacuation_center_id' => null,
+            'calamity_id' => null,
         ]);
-        
+
         DB::table('members')->insert([
             'fname' => 'Mateo',
             'lname' => 'Gonzalez',
@@ -1528,6 +1576,7 @@ class MembersSeeder extends Seeder
             'soloParent' => 0,
             'head_id' => 9,
             'evacuation_center_id' => null,
+            'calamity_id' => null,
         ]);
     }
 }

@@ -39,7 +39,8 @@ class Members extends Model
         'pwd',
         'soloParent',
         'head_id',
-        'evacuation_center_id'
+        'evacuation_center_id',
+        'calamity_id'
     ];
 
     public function evacuationCenters()
