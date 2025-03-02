@@ -31,5 +31,6 @@ Route::apiResource('/evacuees', EvacueesController::class);
 Route::get('/evacuees/calamity/{calamity_id}', [EvacueesController::class, 'getByCalamityId']);
 Route::get('/head-family/', [HeadFamilyController::class, 'getHeadFam']);
 Route::get('/members/{evacuation_center_id}', [MembersController::class, 'getTotalValues']);
+Route::get('/members/getMembersStats/{calamity_id}', [MembersController::class, 'getMembersStats']);
 Route::get('/members/getEvacueeStats/{evacuation_center_id}', [MembersController::class, 'getTotalStats']);
 Route::put('/members/update-evacuation-center/{head_id}', [MembersController::class, 'updateEvacuationCenter']);

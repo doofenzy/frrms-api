@@ -109,4 +109,48 @@ class MembersController extends Controller
 
         return response()->json($response);
     }
+
+    public function getMembersStats($calamity_id)
+    {
+        $members = Members::where('calamity_id', $calamity_id)->get();
+
+        $fields = [
+            'infant',
+            'toddlers',
+            'preschool',
+            'schoolAge',
+            'teenAge',
+            'adult',
+            'seniorCitizen',
+            'lactatingMothers',
+            'pregnant',
+            'pwd',
+            'soloParent'
+        ];
+
+        $totals = [
+            'totalMembers' => $members->count(),
+            'infant' => 0,
+            'toddlers' => 0,
+            'preschool' => 0,
+            'schoolAge' => 0,
+            'teenAge' => 0,
+            'adult' => 0,
+            'seniorCitizen' => 0,
+            'lactatingMothers' => 0,
+            'pregnant' => 0,
+            'pwd' => 0,
+            'soloParent' => 0
+        ];
+
+        foreach ($members as $member) {
+            foreach ($fields as $field) {
+                $totals[$field] += (int)$member->$field;
+            }
+        }
+
+        return response()->json(
+            $totals
+        );
+    }
 }
