@@ -153,4 +153,19 @@ class MembersController extends Controller
             $totals
         );
     }
+
+
+    public function getHeadFamily($head_id)
+    {
+        $members = Members::where('head_id', $head_id)->get(['id', 'fname', 'lname', 'mname', 'suffix', 'zone', 'lot', 'status', 'phone_number', 'religion', 'birthdate', 'age', 'gender', 'occupation', 'group', 'relationship']);
+
+        return response()->json($members);
+    }
+
+    public function deleteMember($id)
+    {
+        $member = Members::find($id);
+        $member->delete();
+        return response()->json(['message' => 'Member deleted successfully']);
+    }
 }

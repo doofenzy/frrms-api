@@ -34,3 +34,5 @@ Route::get('/members/{evacuation_center_id}', [MembersController::class, 'getTot
 Route::get('/members/getMembersStats/{calamity_id}', [MembersController::class, 'getMembersStats']);
 Route::get('/members/getEvacueeStats/{evacuation_center_id}', [MembersController::class, 'getTotalStats']);
 Route::put('/members/update-evacuation-center/{head_id}', [MembersController::class, 'updateEvacuationCenter']);
+Route::get('/members/getHeadFamily/{head_id}', [MembersController::class, 'getHeadFamily']);
+Route::delete('/members/deleteMember/{id}', [MembersController::class, 'deleteMember']);
